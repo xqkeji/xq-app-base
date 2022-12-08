@@ -22,8 +22,7 @@
             "xqkeji\\app\\base\\composer\\Cmd::test"
         ],
         "post-install-cmd": [
-            "xqkeji\\app\\base\\composer\\Cmd::removeDir('www/assets/bootstrap/')",
-            "xqkeji\\app\\base\\composer\\Cmd::copyDir('vendor/twbs/dist/','www/assets/bootstrap/')"
+            "xqkeji\\app\\base\\composer\\Cmd::test"
         ]
     },
     "extra": {
