@@ -44,6 +44,16 @@
                 "cmd":"copyDir",
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             }
-        ]
+        ],
+        "post-package-install":[
+            {
+                "cmd":"rmDir",
+                "param":["www/assets/bootstrap/"]
+            },
+            {
+                "cmd":"copyDir",
+                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+            }
+        ]，
     }
 }
