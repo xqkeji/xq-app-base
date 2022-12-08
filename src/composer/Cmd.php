@@ -1,5 +1,7 @@
 <?php
 namespace xqkeji\app\base\composer;
+require 'vendor/composer/autoload_classmap.php';
+use Composer\Script\Event;
 class Cmd{
     public static function postInstallBootstrap() : void
     {
@@ -14,6 +16,10 @@ class Cmd{
             static::removeDir($dist_dir);
         }
         static::copyDir($bootstrap_dir,$dist_dir);
+    }
+    public static function test(Event $event){
+        $extra = $event->getComposer()->getPackage()->getExtra();
+        var_export($extra);
     }
     public static function createDir($path, $mode = 0775, $recursive = true)
     {
