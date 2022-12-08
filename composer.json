@@ -1,7 +1,7 @@
 {
     "name": "xqkeji/app-base",
     "description": "一个基于新齐低代码开发框架后台管理的基础管理模块，是整个后台管理系统的核心模块。",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "license": "SSPL-1.0",
     "autoload": {
