@@ -19,16 +19,32 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "xqkeji\\app\\base\\composer\\Cmd::test"
+            "xqkeji\\app\\base\\composer\\Asset::excute"
         ],
         "post-install-cmd": [
-            "xqkeji\\app\\base\\composer\\Cmd::test"
+            "xqkeji\\app\\base\\composer\\Asset::excute"
         ]
     },
     "extra": {
-        "post-update-cmd":{
-            "src":"vendor/twbs/dist/",
-            "dist":"www/assets/bootstrap/"
-        }
+        "post-update-cmd":[
+            {
+                "cmd":"rmDir",
+                "param":["www/assets/bootstrap/"]
+            },
+            {
+                "cmd":"copyDir",
+                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+            }
+        ],
+        "post-install-cmd":[
+            {
+                "cmd":"rmDir",
+                "param":["www/assets/bootstrap/"]
+            },
+            {
+                "cmd":"copyDir",
+                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+            }
+        ]
     }
 }

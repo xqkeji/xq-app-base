@@ -1,25 +1,33 @@
 <?php
 namespace xqkeji\app\base\composer;
-require 'vendor/composer/autoload_classmap.php';
+define('XQ_COMPOSER_ROOT_DIR',realpath('../../../'));
+require XQ_COMPOSER_ROOT_DIR.'/vendor/composer/autoload_classmap.php';
 use Composer\Script\Event;
-class Cmd{
-    public static function postInstallBootstrap() : void
-    {
-        $ds=DIRECTORY_SEPARATOR;
-        $root_dir=dirname(dirname(dirname(__DIR__)));
-        $vendor_dir=$root_dir.$ds.'vendor'.$ds;
-        $assets_dir=$root_dir.$ds.'www'.$ds.'assets'.$ds;
-        $bootstrap_dir=$vendor_dir.'twbs'.$ds.'dist'.$ds;
-        $dist_dir=$assets_dir.'bootstrap'.$ds;
-        if(file_exists($dist_dir))
-        {
-            static::removeDir($dist_dir);
-        }
-        static::copyDir($bootstrap_dir,$dist_dir);
-    }
-    public static function test(Event $event){
+class Asset{
+    public static function excute(Event $event){
+        $name=$event->getName();
         $extra = $event->getComposer()->getPackage()->getExtra();
-        var_export($extra);
+        if(isset($extra[$name]))
+        {
+            $data=$extra[$name];
+            foreach($data as $excute){
+                $cmd=$excute['cmd'];
+                $param=$excute['param'];
+                $data=[];
+                if(!empty($param))
+                {
+                    foreach($param as $val)
+                    {
+                        $data[]=XQ_COMPOSER_ROOT_DIR.DIRECTORY_SEPARATOR.$val;
+                    }
+                }
+                call_user_func_array([get_called_class(),$cmd],$data);
+            }
+        }
+        else
+        {
+            throw new \Exception($name.'命令没有配置相应的extra数据！');
+        }
     }
     public static function createDir($path, $mode = 0775, $recursive = true)
     {
@@ -72,7 +80,7 @@ class Cmd{
         }
         closedir($handle);
     }
-    public static function removeDir($dir)
+    public static function rmDir($dir)
     {
         if (!is_dir($dir)) {
             return;
@@ -86,7 +94,7 @@ class Cmd{
             }
             $path = $dir . DIRECTORY_SEPARATOR . $file;
             if (is_dir($path)) {
-                static::removeDir($path);
+                static::rmDir($path);
             } else {
                 static::unlink($path);
             }
