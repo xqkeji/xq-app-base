@@ -54,6 +54,6 @@
                 "cmd":"copyDir",
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             }
-        ]，
+        ]
     }
 }
