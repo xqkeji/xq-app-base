@@ -16,7 +16,7 @@
     "require": {
         "twbs/bootstrap": "^5.2"
     },
-    "xq-cmds": {
+    "extra": {
         "post-update-cmd":[
             {
                 "cmd":"rmDir",
