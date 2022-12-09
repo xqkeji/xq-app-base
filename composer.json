@@ -16,15 +16,7 @@
     "require": {
         "twbs/bootstrap": "^5.2"
     },
-    "scripts": {
-        "post-update-cmd": [
-            "xqkeji\\app\\base\\composer\\Asset::excute"
-        ],
-        "post-install-cmd": [
-            "xqkeji\\app\\base\\composer\\Asset::excute"
-        ]
-    },
-    "extra": {
+    "xq-cmds": {
         "post-update-cmd":[
             {
                 "cmd":"rmDir",
@@ -36,16 +28,6 @@
             }
         ],
         "post-install-cmd":[
-            {
-                "cmd":"rmDir",
-                "param":["www/assets/bootstrap/"]
-            },
-            {
-                "cmd":"copyDir",
-                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
-            }
-        ],
-        "post-package-install":[
             {
                 "cmd":"rmDir",
                 "param":["www/assets/bootstrap/"]
