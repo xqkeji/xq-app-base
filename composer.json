@@ -1,5 +1,5 @@
 {
-    "name": "xqkeji/app-base",
+    "name": "xqkeji/xq-app-base",
     "description": "一个基于新齐低代码开发框架后台管理的基础管理模块，是整个后台管理系统的核心模块。",
     "type": "library",
     "license": "SSPL-1.0",
@@ -17,24 +17,42 @@
         "twbs/bootstrap": "^5.2"
     },
     "extra": {
-        "post-update-cmd":[
+        "post-package-install":[
             {
-                "cmd":"rmDir",
+                "cmd":["Asset","rmDir"],
                 "param":["www/assets/bootstrap/"]
             },
             {
-                "cmd":"copyDir",
+                "cmd":["Asset","copyDir"],
+                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+            },
+            {
+                "cmd":["App","addModule"],
+                "param":["base","vendor/xq-app-base/src"]
+            }
+        ],
+        "post-package-update":[
+            {
+                "cmd":["Asset","rmDir"],
+                "param":["www/assets/bootstrap/"]
+            },
+            {
+                "cmd":["Asset","copyDir"],
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             }
         ],
-        "post-install-cmd":[
+        "post-package-uninstall":[
             {
-                "cmd":"rmDir",
+                "cmd":["Asset","rmDir"],
                 "param":["www/assets/bootstrap/"]
             },
             {
-                "cmd":"copyDir",
+                "cmd":["Asset","copyDir"],
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+            },
+            {
+                "cmd":["App","removeModule"],
+                "param":["base"]
             }
         ]
     }
