@@ -19,39 +19,39 @@
     "extra": {
         "post-package-install":[
             {
-                "cmd":["Asset","rmDir"],
+                "cmd":["xqkeji\\composer\\Asset","rmDir"],
                 "param":["www/assets/bootstrap/"]
             },
             {
-                "cmd":["Asset","copyDir"],
+                "cmd":["xqkeji\\composer\\Asset","copyDir"],
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             },
             {
-                "cmd":["App","addModule"],
+                "cmd":["xqkeji\\composer\\App","addModule"],
                 "param":["base","vendor/xq-app-base/src"]
             }
         ],
         "post-package-update":[
             {
-                "cmd":["Asset","rmDir"],
+                "cmd":["xqkeji\\composer\\Asset","rmDir"],
                 "param":["www/assets/bootstrap/"]
             },
             {
-                "cmd":["Asset","copyDir"],
+                "cmd":["xqkeji\\composer\\Asset","copyDir"],
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             }
         ],
         "post-package-uninstall":[
             {
-                "cmd":["Asset","rmDir"],
+                "cmd":["xqkeji\\composer\\Asset","rmDir"],
                 "param":["www/assets/bootstrap/"]
             },
             {
-                "cmd":["Asset","copyDir"],
+                "cmd":["xqkeji\\composer\\Asset","copyDir"],
                 "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
             },
             {
-                "cmd":["App","removeModule"],
+                "cmd":["xqkeji\\composer\\App","removeModule"],
                 "param":["base"]
             }
         ]
