@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/*!
+ *   XqAdminPage 1.0.0
+ *   Author: xqkeji.cn
+ *   Website: https://xqkeji.cn/
+ */
+/*
+ * 后台框架样式变量
+ * -------------------------
+ */
+/* 顶部工具栏高度 */
+/* 页面左边的宽度 */
+/* 页面右边的宽度 */
+/* 页面底部的宽度 */
+/* 整个页面的可视范围的高度 */
+/* tabs页面标签栏的高度 */
+/* tabs页面标签栏按钮的宽度 */
+/*
+ * 后台框架顶部栏目
+ * -------------------------
+ */
+body {
+  height: auto;
+}
+
+html {
+  height: auto;
+}
+
+#xqkeji-header {
+  height: 50px;
+}
+#xqkeji-header > .col-2 {
+  width: 19%;
+}
+#xqkeji-header > .col-10 {
+  width: 81%;
+}
+#xqkeji-header.mini > .col-2 {
+  width: 65px;
+  padding-left: 15px;
+  padding-right: 0;
+}
+#xqkeji-header.mini > .col-2 .xq-desc {
+  display: none;
+}
+#xqkeji-header.mini > .col-10 {
+  width: calc(100vw - 65px);
+}
+#xqkeji-header.mini > .col-10 .col-2 {
+  padding-right: 0 !important;
+}
+#xqkeji-header a {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#xqkeji-header a span:first-child {
+  font-size: 24px;
+}
+#xqkeji-header #xqkeji-top-nav a {
+  color: rgb(255, 255, 255);
+}
+#xqkeji-header #xqkeji-top-menu .btn {
+  color: rgb(255, 255, 255);
+}
+#xqkeji-header #xqkeji-top-menu .dropdown-menu {
+  min-width: auto;
+}
+#xqkeji-header #xqkeji-top-menu .dropdown-menu .dropdown-item {
+  color: rgb(0, 0, 0);
+}
+
+/**
+ * Component: Sidebar
+ * ------------------
+ */
+#xqkeji-sidebar {
+  height: calc(100vh - 50px);
+  margin-top: 50px;
+  padding-top: 0.2rem !important;
+  z-index: 999;
+  width: 19%;
+}
+#xqkeji-sidebar p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+#xqkeji-sidebar .nav-item > .nav-link {
+  margin-bottom: 0.2rem;
+}
+#xqkeji-sidebar .nav-item > ul {
+  display: block;
+  padding-left: 1rem;
+}
+#xqkeji-sidebar .nav-item > ul > li {
+  list-style: none;
+}
+#xqkeji-sidebar .nav-item > ul > li > .nav-link {
+  padding-left: 0.5rem;
+}
+#xqkeji-sidebar.mini {
+  width: calc(65px - 10px);
+}
+#xqkeji-sidebar.mini p {
+  display: none;
+  margin-bottom: 0;
+}
+#xqkeji-sidebar.mini span.float-end {
+  display: none;
+}
+#xqkeji-sidebar.mini .nav-item:hover > a > p {
+  display: inline-block;
+  position: absolute;
+  width: calc(19% - 65px);
+  left: calc(65px - 10px);
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  z-index: 999;
+  margin-top: -8px;
+}
+#xqkeji-sidebar.mini .nav-item:hover > a > span.float-end {
+  position: absolute;
+  left: calc(19% - 30px);
+  display: block;
+  margin-top: -24px;
+  z-index: 9999;
+}
+#xqkeji-sidebar.mini .nav-item:hover > ul {
+  position: absolute;
+  display: block;
+  width: calc(19% - 65px);
+  left: calc(65px - 10px);
+  z-index: 9999;
+  margin-top: -0.2rem;
+  background-color: rgb(33, 37, 41);
+}
+#xqkeji-sidebar.mini .nav-item:hover > ul p {
+  display: inline-block;
+  width: auto;
+  position: relative;
+  left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+#xqkeji-sidebar.mini .nav-item:hover > ul span.float-end {
+  display: block;
+  position: relative;
+  margin-top: 0;
+  left: 0;
+}
+#xqkeji-sidebar.mini .nav-item:hover > ul ul {
+  position: relative;
+  width: 100%;
+  left: 0;
+  margin-top: 0;
+}
+#xqkeji-sidebar.mini .nav-item > .nav-link {
+  margin-bottom: 0.2rem;
+}
+#xqkeji-sidebar.mini .nav-item > ul {
+  display: none;
+}
+#xqkeji-sidebar.mini > nav > ul > li > ul.d-block {
+  display: none !important;
+}
+#xqkeji-sidebar.mini > nav > ul > li:hover > ul.d-block {
+  display: block !important;
+}
+#xqkeji-sidebar .nav-link {
+  color: rgb(255, 255, 255) !important;
+}
+
+#xqkeji-content {
+  height: calc(100vh - 50px - 42px);
+  min-height: calc(100vh - 50px - 42px);
+  margin-top: 50px;
+  margin-bottom: 42px;
+  width: 81%;
+}
+#xqkeji-content.mini {
+  width: calc(100vw - 65px + 10px);
+}
+
+#xqkeji-tab-header {
+  height: 42px;
+  background: #fafafa;
+  border-bottom: solid 2px #198754;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+}
+#xqkeji-tab-header #xqkeji-tab-left, #xqkeji-tab-header #xqkeji-tab-fullscreen, #xqkeji-tab-header #xqkeji-tab-right {
+  width: 40px;
+  line-height: 23px;
+  max-height: 42px;
+  text-align: center;
+  color: #475059;
+  background: #fff;
+  border: 0;
+  z-index: 99;
+}
+#xqkeji-tab-header #xqkeji-tab-nav {
+  width: calc(100% - 40px - 40px);
+  max-height: 42px;
+  overflow: hidden;
+  line-height: 23px;
+  border-bottom-width: 0;
+  border-bottom-style: none;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul {
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 42px;
+  max-height: 42px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul :first-child {
+  margin-left: 0;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul :first-child a {
+  padding: 0.5rem 1rem;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul li a {
+  padding: 0.5rem 0.2rem 0.5rem 1rem;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul li a button.close {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: inherit;
+}
+#xqkeji-tab-header #xqkeji-tab-nav ul li a button.close span {
+  position: relative;
+  top: -0.8rem;
+  font-size: 0.85rem;
+}
+
+#xqkeji-tab-content {
+  height: calc(100vh - 50px - 42px - 42px);
+}
+#xqkeji-tab-content iframe {
+  height: calc(100vh - 50px - 42px - 42px);
+}
+
+.tab-content > .tab-pane {
+  padding-top: 5px;
+}
+
+#xqkeji-tab-contentmenu {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+#xqkeji-page-body {
+  margin-top: 0.2rem;
+}
+#xqkeji-page-body .table tbody tr td {
+  padding: 0.3rem;
+}
+#xqkeji-page-body td {
+  text-align: center;
+  vertical-align: middle;
+}
+#xqkeji-page-body td .form-switch {
+  width: 32px;
+  margin: auto;
+}
+#xqkeji-page-body th {
+  text-align: center;
+  vertical-align: middle;
+}
+#xqkeji-page-body > .card-header {
+  color: #fff;
+}
+
+#xqkeji-form {
+  margin-top: 0.2rem;
+}
+#xqkeji-form .card-header {
+  color: #fff;
+  height: 3rem;
+}
+#xqkeji-form .form-group {
+  margin-bottom: 1rem;
+}
+#xqkeji-form #xqkeji-form-body {
+  margin-top: 0.5rem;
+}
+#xqkeji-form .xqkeji-check-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#xqkeji-form .xqkeji-check-group li {
+  float: left;
+  padding: 0 10px 0 0;
+}
+#xqkeji-form .xqkeji-check-group li label {
+  margin-left: 0.5rem;
+}
+#xqkeji-form .xq-auth-table td {
+  vertical-align: middle;
+}
+#xqkeji-form .xq-auth-table .xq-auth-check-table {
+  height: 3rem;
+}
+#xqkeji-form .xq-auth-table .xq-auth-check-row {
+  min-width: 10rem;
+  min-height: 4rem;
+}
+#xqkeji-form .xqkeji-auth-check {
+  list-style: none;
+  padding: 0;
+}
+#xqkeji-form .xqkeji-auth-check li {
+  float: left;
+  padding: 0 10px;
+  line-height: 2rem;
+  display: flex !important;
+  align-items: center !important;
+}
+#xqkeji-form .xqkeji-auth-check li label {
+  margin-left: 0.2rem;
+}
+#xqkeji-form .xq-tab-form .tab-content {
+  padding-top: 0.5rem;
+}
+
+.xq-captcha {
+  cursor: pointer;
+}
+
+.card-header.bg-success {
+  color: #fff;
+}
+
+.card-header {
+  height: 50px;
+  max-height: 50px;
+}
+.card-header .form-inline {
+  margin-top: -2px;
+}
+
+.file-drop-zone {
+  min-height: auto !important;
+}
+.file-drop-zone .file-drop-zone-title {
+  padding: 45px 10px;
+}
+
+.container-fluid > .row > div > h2 > b {
+  color: #fff;
+}
+
+.xq-move {
+  cursor: move;
+}
+
+.xq-dragger-table.xq-table-striped > tbody:nth-of-type(odd) > tr > td {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.xq-dragger-table.xq-table-hover > tbody > tr:hover > td {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.xq-dragger-table > :not(:first-child) {
+  border-top: none;
+}
+
+.xq-dragger-table > thead {
+  border-bottom: 2px solid currentColor;
+}
+
+.xq-dragger-table > tfoot {
+  border-top: 2px solid currentColor !important;
+}
+
+#xqkeji-footer {
+  height: 42px;
+  line-height: 40px;
+  margin-left: 19%;
+}
+#xqkeji-footer.mini {
+  margin-left: calc(65px - 10px);
+}
+#xqkeji-footer a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+/*# sourceMappingURL=xq-admin-page.css.map */

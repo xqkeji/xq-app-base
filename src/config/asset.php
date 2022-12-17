@@ -24,11 +24,5 @@ return [
             'fontawesome-free/css/all.css',
             'css/xq-page.css',
         ],	
-    ],
-    'directory'=>[
-        'webfonts'=>[
-            'fontawesome-free/webfonts'
-        ],
-        'images'=>['images'],
-    ],
+    ]
 ];

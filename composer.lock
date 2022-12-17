@@ -4,8 +4,179 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "759d76fb94ddaa9c525af3a7899b85ca",
+    "content-hash": "91fb0bf89b1b8756ef4597341acda96a",
     "packages": [
+        {
+            "name": "components/jquery",
+            "version": "3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/jquery.git",
+                "reference": "6cf38ee1fd04b6adf8e7dda161283aa35be818c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/jquery/zipball/6cf38ee1fd04b6adf8e7dda161283aa35be818c3",
+                "reference": "6cf38ee1fd04b6adf8e7dda161283aa35be818c3",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.js"
+                    ],
+                    "files": [
+                        "jquery.min.js",
+                        "jquery.min.map",
+                        "jquery.slim.js",
+                        "jquery.slim.min.js",
+                        "jquery.slim.min.map"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "JS Foundation and other contributors"
+                }
+            ],
+            "description": "jQuery JavaScript Library",
+            "homepage": "http://jquery.com",
+            "support": {
+                "forum": "http://forum.jquery.com",
+                "irc": "irc://irc.freenode.org/jquery",
+                "issues": "https://github.com/jquery/jquery/issues",
+                "source": "https://github.com/jquery/jquery",
+                "wiki": "http://docs.jquery.com/"
+            },
+            "time": "2021-03-20T19:13:42+00:00"
+        },
+        {
+            "name": "kartik-v/bootstrap-fileinput",
+            "version": "v5.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+                "reference": "35c29cd9fd5bc47eae5238feaabee95b2d7efe3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/35c29cd9fd5bc47eae5238feaabee95b2d7efe3c",
+                "reference": "35c29cd9fd5bc47eae5238feaabee95b2d7efe3c",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\fileinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced HTML 5 file input for Bootstrap 5.x, 4.x, and 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "keywords": [
+                "ajax",
+                "bootstrap",
+                "delete",
+                "file",
+                "image",
+                "input",
+                "jquery",
+                "multiple",
+                "preview",
+                "progress",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/kartik-v/bootstrap-fileinput/issues",
+                "source": "https://github.com/kartik-v/bootstrap-fileinput/tree/v5.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/bootstrap-fileinput",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-10-13T06:16:39+00:00"
+        },
+        {
+            "name": "tinymce/tinymce",
+            "version": "6.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tinymce/tinymce-dist.git",
+                "reference": "bec6271ca90b2f37db48a955697746c1f58b9358"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tinymce/tinymce-dist/zipball/bec6271ca90b2f37db48a955697746c1f58b9358",
+                "reference": "bec6271ca90b2f37db48a955697746c1f58b9358",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "tinymce.js",
+                        "plugins/*/plugin.js",
+                        "themes/*/theme.js",
+                        "models/*/model.js",
+                        "icons/*/icons.js"
+                    ],
+                    "files": [
+                        "tinymce.min.js",
+                        "plugins/*/plugin.min.js",
+                        "themes/*/theme.min.js",
+                        "models/*/model.min.js",
+                        "skins/**",
+                        "icons/*/icons.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT-only"
+            ],
+            "description": "Web based JavaScript HTML WYSIWYG editor control.",
+            "homepage": "https://www.tiny.cloud/",
+            "keywords": [
+                "contenteditable",
+                "editing",
+                "html",
+                "javascript",
+                "rich editor",
+                "rich text",
+                "rich text editor",
+                "richtext",
+                "rte",
+                "text",
+                "tinymce",
+                "wysiwyg"
+            ],
+            "support": {
+                "source": "https://github.com/tinymce/tinymce-dist/tree/6.3.1"
+            },
+            "time": "2022-12-06T02:19:08+00:00"
+        },
         {
             "name": "twbs/bootstrap",
             "version": "v5.2.3",
@@ -55,6 +226,45 @@
                 "source": "https://github.com/twbs/bootstrap/tree/v5.2.3"
             },
             "time": "2022-11-21T18:19:01+00:00"
+        },
+        {
+            "name": "twbs/bootstrap-icons",
+            "version": "v1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/icons.git",
+                "reference": "4deaf1f69ccbe0a996c08a308525a26b05467242"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/icons/zipball/4deaf1f69ccbe0a996c08a308525a26b05467242",
+                "reference": "4deaf1f69ccbe0a996c08a308525a26b05467242",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "Official open source SVG icon library for Bootstrap",
+            "homepage": "https://icons.getbootstrap.com/",
+            "keywords": [
+                "bootstrap",
+                "icon font",
+                "icons",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/icons/issues",
+                "source": "https://github.com/twbs/icons/tree/v1.10.2"
+            },
+            "time": "2022-11-13T17:44:34+00:00"
         }
     ],
     "packages-dev": [],

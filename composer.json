@@ -14,45 +14,47 @@
         }
     ],
     "require": {
-        "twbs/bootstrap": "^5.2"
+        "twbs/bootstrap": "^5.2",
+        "twbs/bootstrap-icons":"^1.10",
+        "kartik-v/bootstrap-fileinput":"^5.5",
+        "components/jquery":"^3.6",
+        "tinymce/tinymce":"^6.3"
     },
     "extra": {
         "post-package-install":[
             {
-                "cmd":["xqkeji\\composer\\Asset","rmDir"],
-                "param":["www/assets/bootstrap/"]
-            },
-            {
-                "cmd":["xqkeji\\composer\\Asset","copyDir"],
-                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
-            },
-            {
-                "cmd":["xqkeji\\composer\\App","addModule"],
-                "param":["base","vendor/xq-app-base/src"]
+                "cmd":["xqkeji\\composer\\Asset","copyDirs"],
+                "param":[{
+                    "vendor/twbs/bootstrap/dist/":"www/assets/bootstrap/",
+                    "vendor/twbs/bootstrap-icons/font/":"www/assets/bootstrap-icons/",
+                    "vendor/components/jquery/":"www/assets/jquery/",
+                    "vendor/kartik-v/bootstrap-fileinput/":"www/assets/bootstrap-fileinput/",
+                    "vendor/tinymce/tinymce/":"www/assets/tinymce/"
+                }]
             }
         ],
         "post-package-update":[
             {
-                "cmd":["xqkeji\\composer\\Asset","rmDir"],
-                "param":["www/assets/bootstrap/"]
-            },
-            {
-                "cmd":["xqkeji\\composer\\Asset","copyDir"],
-                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
+                "cmd":["xqkeji\\composer\\Asset","copyDirs"],
+                "param":[{
+                    "vendor/twbs/bootstrap/dist/":"www/assets/bootstrap/",
+                    "vendor/twbs/bootstrap-icons/font/":"www/assets/bootstrap-icons/",
+                    "vendor/components/jquery/":"www/assets/jquery/",
+                    "vendor/kartik-v/bootstrap-fileinput/":"www/assets/bootstrap-fileinput/",
+                    "vendor/tinymce/tinymce/":"www/assets/tinymce/"
+                }]
             }
         ],
         "post-package-uninstall":[
             {
-                "cmd":["xqkeji\\composer\\Asset","rmDir"],
-                "param":["www/assets/bootstrap/"]
-            },
-            {
-                "cmd":["xqkeji\\composer\\Asset","copyDir"],
-                "param":["vendor/twbs/bootstrap/dist/","www/assets/bootstrap/"]
-            },
-            {
-                "cmd":["xqkeji\\composer\\App","removeModule"],
-                "param":["base"]
+                "cmd":["xqkeji\\composer\\Asset","rmDirs"],
+                "param":[{
+                    "vendor/twbs/bootstrap/dist/":"www/assets/bootstrap/",
+                    "vendor/twbs/bootstrap-icons/font/":"www/assets/bootstrap-icons/",
+                    "vendor/components/jquery/":"www/assets/jquery/",
+                    "vendor/kartik-v/bootstrap-fileinput/":"www/assets/bootstrap-fileinput/",
+                    "vendor/tinymce/tinymce/":"www/assets/tinymce/"
+                }]
             }
         ]
     }
