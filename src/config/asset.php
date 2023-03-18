@@ -1,28 +1,36 @@
 <?php
 return [
     'js'=>[
-        'admin_layout_js'=>[
+        'admin-layout-js'=>[
             'bootstrap/dist/js/bootstrap.bundle.js',
-            'overlayscrollbars/js/OverlayScrollbars.js',
-            'js/xq-admin-page.js',
+            'overlayscrollbars/browser/overlayscrollbars.browser.es5.js',
+            'xq-admin-layout/dist/js/xq-admin-layout.js',
         ],
-
-        'admin_page_js'=>[
+        'admin-page-js'=>[
             'bootstrap/dist/js/bootstrap.bundle.js',
-            'js/xq-page.js',
+            'xq-admin-page/dist/js/xq-admin-page.js',
+        ],
+        'admin-treegrid-js'=>[
+            'bootstrap/dist/js/bootstrap.bundle.js',
+            'xq-treegrid/dist/js/xq-treegrid.js',
         ],
     ],
     'css'=>[
-        'admin_layout_css'=>[
+        'admin-layout-css'=>[
             'bootstrap/dist/css/bootstrap.css',
-            'fontawesome-free/css/all.css',
-            'overlayscrollbars/css/OverlayScrollbars.css',
-            'css/xq-admin-page.css',
+            'bootstrap-icons/font/bootstrap-icons.css',
+            'overlayscrollbars/styles/overlayscrollbars.css',
+            'xq-admin-layout/dist/css/xq-admin-layout.css',
         ],
-        'admin_page_css'=>[
+        'admin-page-css'=>[
             'bootstrap/dist/css/bootstrap.css',
-            'fontawesome-free/css/all.css',
-            'css/xq-page.css',
-        ],	
+            'bootstrap-icons/font/bootstrap-icons.css',
+            'xq-admin-page/dist/css/xq-admin-page.css',
+        ],
+        'admin-treegrid-css'=>[
+            'bootstrap/dist/css/bootstrap.css',
+            'bootstrap-icons/font/bootstrap-icons.css',
+            'xq-treegrid/dist/css/xq-treegrid.css',
+        ]
     ]
 ];
