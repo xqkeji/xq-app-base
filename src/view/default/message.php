@@ -1,12 +1,18 @@
 <?php
 $this->setMainView("admin");
 ?>
-<div id="xqkeji-form">
-    <h5 class="card-header bg-success"><?=$pageTitle?></h5>
-    <div id="xqkeji-form-body">
+<div class="card" style="margin-top:10px;">
+  <div class="card-header bg-success">
+  <?=$pageTitle?>
+  </div>
+  <div class="card-body">
+    <p class="card-text">
     <?php
 	  $this->outputFlash();
 	  ?>
+    </p>
+          
   </div>
 </div>
+
 

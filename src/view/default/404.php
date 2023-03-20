@@ -7,7 +7,7 @@
   <meta name="description" content="404找不到页面">
   <meta name="author" content="XqKeji">
   <title>404找不到页面</title>
-  <?=$this->getAssetsCss('admin_page_css')?>
+  <?=$this->getAssetsCss('admin-page-css')?>
 </head>
 <body>
 <div class="containter">
@@ -23,7 +23,7 @@
 </div>
 </div>
 <?php
-echo $this->getAssetsJs('admin_page_js');
+echo $this->getAssetsJs('admin-page-js');
 $this->outputAsset();
 ?>
 </body>
