@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="XqKeji">
   <title><?=isset($pageTitle)?$pageTitle:''?></title>
-  <?=$this->getAssetsCss('admin-page-css')?>
+  <?=$this->getAssetsCss('xq-admin-page')?>
 </head>
 <body>
   <div class="container-fluid">
@@ -17,7 +17,7 @@
       </div>
   </div>
 <?php
-echo $this->getAssetsJs('admin-page-js');
+echo $this->getAssetsJs('xq-admin-page');
 $this->outputAsset();
 ?>
 </body>
