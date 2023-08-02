@@ -5,7 +5,7 @@ return [
 	[
 		[
 			'div',
-			'attr_class'=>'col-4 text-start',
+			'attr_class'=>'col-4 text-end',
 			[
 				[
 					'button',
