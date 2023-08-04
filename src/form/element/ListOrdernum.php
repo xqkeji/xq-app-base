@@ -1,7 +1,15 @@
 <?php
-return [
-    'ListItem',
-	'name'=>'ordernum',
+return[		
+	'ListItem',
 	'text'=>'序号',
-	'attr_style'=>'width:80px;'
+	'attr_style'=>'width:80px;',
+	[
+		[
+			'number',
+			'name'=>'ordernum',	
+			'text'=>'序号',
+			'attr_style'=>'width:80px;',
+			'attr_class'=>'form-control',
+		],
+	],	
 ];
