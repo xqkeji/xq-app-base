@@ -3,5 +3,9 @@ return [
 	'number',
 	'name'=>'age',
 	'text'=>'年龄',
-	'filters'=>['int'],
+	'attr_required'=>'true',
+    'attr_style'=>'width:80px;',
+    'validators'=>[['required']],
+    'filters'=>['int'],
+    'default_value'=>0,
 ];

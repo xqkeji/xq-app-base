@@ -7,4 +7,5 @@ return [
     'attr_style'=>'width:80px;',
     'validators'=>[['required']],
     'filters'=>['int'],
+    'default_value'=>0,
 ];
