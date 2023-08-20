@@ -1,6 +1,7 @@
 <?php
 return [
     'radio',
+    'name'=>'sex',
     'text'=>'性别',
     'template'=>'check',
     'items'=>[

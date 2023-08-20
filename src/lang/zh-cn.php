@@ -105,4 +105,5 @@ return [
     'can not have the minimum resolution'=>'不能小于最小的分辨率',
     'exceeds the maximum resolution'=>'超过最大的分辨率',
     'has to be equal resolution'=>'必须是一个相等的分辨率',
+    'deny post'=>'禁止提交',
 ];
