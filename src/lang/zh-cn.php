@@ -106,4 +106,6 @@ return [
     'exceeds the maximum resolution'=>'超过最大的分辨率',
     'has to be equal resolution'=>'必须是一个相等的分辨率',
     'deny post'=>'禁止提交',
+    'the username is exists'=>'用户名称已经存在',
+    'the category exists info can not delete'=>'栏目下存在信息不能删除',
 ];
