@@ -16,7 +16,6 @@ $this->setMainView("admin");
 		<?php
 			$this->outputFlash();
 			echo $form;
-			echo $pager;
 		?>
 	</div>
 </div>

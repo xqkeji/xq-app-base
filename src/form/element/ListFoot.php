@@ -11,8 +11,34 @@ return [
 			'attr_colspan'=>'99',
 			'attr_style'=>'text-align:left;',
 			[
-				'add',
-				'batch_delete',
+				[
+					'div',
+					'attr_class'=>'d-flex',
+					[
+						[
+							'div',
+							'attr_class'=>'me-auto',
+							[
+								'add',
+								'batch_delete',
+							]
+						],
+						[
+							'div',
+							[
+								'pager',
+							]
+						],
+						[
+							'div',
+							'attr_class'=>'ms-auto',
+							[
+								'PageSize',
+							]
+						],
+					]
+				]
+				
 			]
 		],
 	]
