@@ -2,7 +2,7 @@
 return [
 	'ListItem',
 	'name'=>'update_time',
-	'class'=>'xq-order',
+	'attr_class'=>'xq-order',
 	'text'=>'更新时间',
 	'attr_style'=>'width:180px;',
 	'event'=>[

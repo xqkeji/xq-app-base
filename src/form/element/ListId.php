@@ -1,8 +1,9 @@
 <?php
 return [
 	'ListItem',
+	'name'=>'_id',
 	'text'=>'选择',
-	'class'=>'xq-order',
+	'attr_class'=>'xq-order',
 	'attr_style'=>'width:70px;',
 	[
 		[
