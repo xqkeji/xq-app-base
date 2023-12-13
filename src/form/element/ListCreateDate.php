@@ -2,6 +2,7 @@
 return [
 	'ListItem',
 	'name'=>'create_time',
+	'class'=>'xq-order',
 	'text'=>'创建日期',
 	'attr_style'=>'width:120px;',
 	'event'=>[
