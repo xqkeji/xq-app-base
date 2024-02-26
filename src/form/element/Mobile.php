@@ -3,7 +3,11 @@ return [
 	'text',
 	'name'=>'mobile',
 	'text'=>'手机号码',
-	'attr_required'=>'true',
+	'attrs'=>[
+		'class'=>'form-control',
+		'required'=>1,
+		'placeholder'=>'请输入手机号码',
+	],
 	'validators'=>[
 		['required'],
 		[

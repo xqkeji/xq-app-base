@@ -5,6 +5,6 @@ return [
 	'name'=>'username',
 	'attr_required'=>'1',
 	'validators'=>[
-		['required'],
+		['required']
 	],
 ];

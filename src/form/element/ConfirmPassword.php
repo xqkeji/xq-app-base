@@ -1,0 +1,19 @@
+<?php
+return [
+    'password',
+    'name'=>'confirm_password',
+    'text'=>'确认密码',
+    'attrs'=>[
+		'class'=>'form-control',
+		'required'=>1,
+		'placeholder'=>'请输入确认密码',
+	],
+    'validators'=>[
+        ['required'],
+        [
+            'confirm',
+            'allowEmpty'=>false,
+            'with'=>'password',
+        ]
+    ],
+];
