@@ -1,8 +1,8 @@
 <?php
 return [
     'PageSize',
-    'id'=>'xq-page-size',
     'name'=>'page-size',
+    'attr_id'=>'xq-page-size',
     'attr_class'=>'form-select',
     'attr_style'=>'width:80px',
     'items'=>[
