@@ -121,4 +121,16 @@ return [
     'reset password success'=>'重置密码成功',
     'reset password failed'=>'重置密码失败',
     'the username has not exits'=>'用户名不存在',
+    'select'=>'选择',
+    'operation'=>'操作',
+    'sent code 3 times today, please try again tomorrow.'=>'今天已经发送了3次验证码，请明天再试。',
+    'email code'=>'邮件验证码',
+    'xqkeji'=>'新齐科技中心',
+    'not configured email'=>'系统没有配置发送邮箱',
+    'send success'=>'发送成功',
+    'send fail'=>'发送失败',
+    'second'=>'秒',
+    'retrieve'=>'重新获取',
+    'obtain'=>'获取',
+    
 ];
