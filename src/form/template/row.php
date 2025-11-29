@@ -1,6 +1,6 @@
-<div class="form-group row">
-	<label class="col-2 col-form-label text-end"><?=$text?></label>
-	<div class="col-4">
+<div class="form-group row align-items-center px-3">
+	<label class="col-2 col-md-2 col-form-label text-start text-md-end"><?=$text?></label>
+	<div class="col-12 col-md-4 mt-2 mt-md-0">
 		<?=$content?>
 	</div>
 </div>
