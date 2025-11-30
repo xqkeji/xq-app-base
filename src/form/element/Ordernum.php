@@ -8,4 +8,5 @@ return [
     'validators'=>[['required']],
     'filters'=>['int'],
     'defaultValue'=>0,
+    'template'=>'col2',
 ];
