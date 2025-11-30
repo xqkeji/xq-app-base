@@ -2,7 +2,7 @@
 return [
 	'ListItem',
 	'text'=>'状态',
-	'attr_style'=>'width:70px;',
+	'attr_style'=>'min-width:70px;',
 	'event'=>[
 		'export'=>function($element,$value){
 			if($value==0)

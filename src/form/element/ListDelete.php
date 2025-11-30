@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'operation',
 	'text'=>'操作',
-	'attr_style'=>'width:80px;',
+	'attr_style'=>'min-width:80px;',
 	[
 		[
 			'button',

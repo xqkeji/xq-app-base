@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'education',
 	'text'=>'学历',
-	'attr_style'=>'width:80px;',
+	'attr_style'=>'min-width:80px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			$items=[

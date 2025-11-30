@@ -3,7 +3,7 @@ return [
 	'ListItem',
 	'name'=>'sex',
 	'text'=>'性别',
-	'attr_style'=>'width:80px;',
+	'attr_style'=>'min-width:80px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			if($value==1)

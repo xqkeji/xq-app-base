@@ -3,5 +3,5 @@ return [
 	'ListItem',
 	'name'=>'fullname',
 	'text'=>'姓名',
-	'attr_style'=>'width:80px;'
+	'attr_style'=>'min-width:80px;'
 ];

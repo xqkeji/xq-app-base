@@ -3,5 +3,5 @@ return [
 	'ListItem',
 	'name'=>'email',
 	'text'=>'邮箱',
-	'attr_style'=>'width:200px;',
+	'attr_style'=>'min-width:200px;',
 ];

@@ -2,7 +2,7 @@
 return[		
 	'ListItem',
 	'text'=>'序号',
-	'attr_style'=>'width:80px;',
+	'attr_style'=>'min-width:80px;',
 	[
 		[
 			'number',

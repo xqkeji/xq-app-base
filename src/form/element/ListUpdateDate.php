@@ -4,7 +4,7 @@ return [
 	'name'=>'update_time',
 	'attr_class'=>'xq-order',
 	'text'=>'更新日期',
-	'attr_style'=>'width:120px;',
+	'attr_style'=>'min-width:120px;',
 	'event'=>[
 		'format'=>function($element,$value){
 			return date('Y-m-d',$value);
