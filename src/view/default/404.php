@@ -10,8 +10,8 @@
   <?=$this->getAssetsCss('xq-admin-page')?>
 </head>
 <body>
-<div class="containter">
-<div class="col-12">
+<div class="container-fluid py-1">
+<div class="col-12 px-0 sm:px-2">
 		<div class="card">
 		  <div class="card-header bg-warning">
 			404找不到页面

@@ -5,7 +5,7 @@ $params=xqkeji\App::getActionParams();
 <div id="xqkeji-page-body" class="card">
   <div class="card-header bg-success align-items-center">
       <div class="row">
-          <div class="col-4">
+          <div class="col-8">
               <h5 class="align-items-center">
               <?=$pageTitle?>
               </h5>

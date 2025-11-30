@@ -9,9 +9,9 @@
   <?=$this->getAssetsCss('xq-admin-page')?>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid py-1">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 px-0 sm:px-2">
           <?=$this->getContent()?>
         </div>
       </div>
