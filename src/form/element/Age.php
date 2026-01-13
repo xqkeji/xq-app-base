@@ -1,11 +1,16 @@
 <?php
-return [
-	'number',
-	'name'=>'age',
-	'text'=>'年龄',
-	'attr_required'=>'true',
-    'attr_style'=>'width:80px;',
-    'validators'=>[['required']],
-    'filters'=>['int'],
-    'defaultValue'=>0,
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Number;
+class Age extends Number
+{
+	protected $name = 'age';
+	protected $text = '年龄';
+	protected $attrs= [
+		'required'=>'true',
+        'style'=>'width:80px;',
+	];
+	protected $vt = [['required']];
+    protected $filters = ['int'];
+    protected $defaultValue = 0;
+    protected $template = '@default';
+}

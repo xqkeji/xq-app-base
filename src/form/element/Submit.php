@@ -1,20 +1,13 @@
 <?php
-return [
-	'div',
-	'attr_class'=>'form-group row',
-	[
-		[
-			'div',
-			'attr_class'=>'col-8 text-center',
-			[
-				[
-					'submit',
-					'name'=>'submit',
-					'attr_class'=>'btn btn-primary',
-					'attr_style'=>'width:100px;margin-bottom:1rem;',
-					'attr_value'=>'确定',
-				]
-			],
-		],
-	],
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Submit as BaseSubmit;
+class Submit extends BaseSubmit
+{
+	protected $name = 'submit';
+	protected $text = '';
+	protected $attrs= [
+		'class'=>'btn btn-primary',
+		'style'=>'width:100px;margin-bottom:1rem;',
+		'value'=>'确定',
+	];
+}

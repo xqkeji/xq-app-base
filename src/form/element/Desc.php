@@ -1,8 +1,13 @@
 <?php
-return [
-	'text_area',
-	'name'=>'desc',
-	'text'=>'描述',
-	'attr_rows'=>'8',
-	'attr_cols'=>'30',
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\TextArea;
+class Desc extends TextArea
+{
+    protected $name = 'desc';
+    protected $text = '描述';
+    protected $attrs = [
+        'rows' => '8',
+        'cols' => '30',
+    ];
+    protected $template = '@default';
+}

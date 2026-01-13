@@ -1,6 +1,8 @@
 <?php
-return [
-	'fileinput',
-	'name'=>'doc',
-	'text'=>'附件'
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\FileInput;
+class DocFile extends FileInput
+{
+    protected $name = 'doc';
+    protected $text = '附件';
+}

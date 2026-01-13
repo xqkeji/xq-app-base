@@ -1,7 +1,11 @@
 <?php
-return [
-	'button',
-	'name'=>'b_delete',
-	'attr_value'=>'删除',
-	'attr_class'=>'btn btn-danger me-1 xq-batch',
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Button;
+class BatchDelete extends Button
+{
+    protected $name = 'b_delete';
+    protected $attrs = [
+        'value' => '删除',
+        'class' => 'btn btn-danger me-1 xq-batch',
+    ];
+}
