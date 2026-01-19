@@ -1,8 +1,14 @@
 <?php
-return [
-	'text',
-	'name'=>'name',
-	'text'=>'名称',
-	'attr_required'=>'true',
-	'validators'=>[['required']],
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Text;
+class Name extends Text
+{
+    protected $name = 'name';
+    protected $text = '名称';
+    protected $attrs = [
+        'required' => 'true',
+    ];
+    protected $filters = ['string'];
+    protected $vt = [['required']];
+    protected $template = '@default';
+}

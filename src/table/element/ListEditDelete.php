@@ -1,23 +1,29 @@
 <?php
-return [
-	'ListItem',
-	'name'=>'operation',
-	'text'=>'操作',
-	'attr_style'=>'min-width:120px;',
-	[
-		[
-			'button',
-			'attr_class'=>'btn btn-secondary btn-sm xq-edit px-2',
-			'attr_style'=>'margin-right:5px;',
-			'attr_value'=>'编辑',
-			
-		],
-		[
-			'button',
-			'attr_class'=>'btn btn-danger btn-sm xq-delete px-2',
-			'attr_style'=>'margin-right:5px;',
-			'attr_value'=>'删除',
-			
-		],
-	],
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListEditDelete extends ListItem
+{
+    protected $name = 'operation';
+    protected $text = '操作';
+    protected $attrs = [
+        'style' => 'min-width:120px;',
+    ];
+    protected $el = [
+        [
+            'button',
+			'attrs'=>[
+				'class'=>'btn btn-secondary btn-sm xq-edit px-2',
+				'style'=>'margin-right:5px;',
+				'value' => '编辑',
+			],
+        ],
+        [
+            'button',
+			'attrs'=>[
+				'class'=>'btn btn-danger btn-sm xq-delete px-2',
+				'style'=>'margin-right:5px;',
+				'value' => '删除',
+			],
+        ],
+    ];
+}

@@ -8,6 +8,7 @@ class Address extends Text
 	protected $attrs= [
 		'required'=>'true',
 	];
+	protected $filters = ['string'];
 	protected $vt = [['required']];
 	protected $template = '@default';
 }

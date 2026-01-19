@@ -9,5 +9,6 @@ class Desc extends TextArea
         'rows' => '8',
         'cols' => '30',
     ];
+    protected $filters = ['string'];
     protected $template = '@default';
 }

@@ -11,4 +11,6 @@ class Fullname extends Text
     protected $vt = [
         ['required'],
     ];
+    protected $filters = ['string'];
+    protected $template = '@default';
 }

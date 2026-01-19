@@ -1,6 +1,10 @@
 <?php
-return [
-	'text',
-	'name'=>'seo_title',
-	'text'=>'SEO标题',
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Text;
+class SeoTitle extends Text
+{
+    protected $name = 'seo_title';
+    protected $text = 'SEO标题';
+    protected $filters = ['string'];
+    protected $template = '@default';
+}

@@ -11,4 +11,5 @@ class Col8Submit extends Div
 	protected $el=[
 		'@Submit',
 	];
+	
 }

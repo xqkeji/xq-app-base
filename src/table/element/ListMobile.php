@@ -1,7 +1,11 @@
 <?php
-return [
-	'ListItem',
-	'name'=>'mobile',
-	'text'=>'手机号码',
-	'attr_style'=>'min-width:120px;',
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListMobile extends ListItem
+{
+    protected $name = 'mobile';
+    protected $text = '手机号码';
+    protected $attrs = [
+        'style' => 'min-width:120px;',
+    ];
+}

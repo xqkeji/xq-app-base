@@ -10,4 +10,5 @@ class Submit extends BaseSubmit
 		'style'=>'width:100px;margin-bottom:1rem;',
 		'value'=>'确定',
 	];
+	
 }

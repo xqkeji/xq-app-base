@@ -1,15 +1,23 @@
 <?php
-return[		
-	'ListItem',
-	'text'=>'序号',
-	'attr_style'=>'min-width:80px;',
-	[
-		[
-			'number',
-			'name'=>'ordernum',	
-			'text'=>'序号',
-			'attr_style'=>'width:80px;',
-			'attr_class'=>'form-control',
-		],
-	],	
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListOrdernum extends ListItem
+{
+    protected $text = '序号';
+    protected $name = 'list-ordernum';
+    protected $attrs = [
+        'style' => 'min-width:80px;',
+    ];
+    protected $el = [
+        [
+            'number',
+            'name' => 'ordernum',
+            'text' => '序号',
+            'attrs' => [
+                'style' => 'width:80px;',
+                'class' => 'form-control',
+            ],
+            
+        ],
+    ];
+}

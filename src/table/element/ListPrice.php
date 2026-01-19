@@ -1,7 +1,11 @@
 <?php
-return [
-	'ListItem',
-	'name'=>'price',
-	'text'=>'价格',
-	'attr_style'=>'min-width:120px;',
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListPrice extends ListItem
+{
+    protected $name = 'price';
+    protected $text = '价格';
+    protected $attrs = [
+        'style' => 'min-width:120px;',
+    ];
+}

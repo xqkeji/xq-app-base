@@ -1,12 +1,17 @@
 <?php
-return [
-    'number',
-    'name'=>'price',
-    'text'=>'价格',
-    'attr_required'=>'true',
-    'attr_style'=>'width:120px;',
-    'attr_step'=>'0.01',
-    'validators'=>[['required']],
-    'filters'=>['float'],
-    'defaultValue'=>0.00,
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Number;
+class Price extends Number
+{
+    protected $name = 'price';
+    protected $text = '价格';
+    protected $attrs = [
+        'required' => 'true',
+        'style' => 'width:120px;',
+        'step' => '0.01',
+    ];
+    protected $vt = [['required']];
+    protected $filters = ['float'];
+    protected $defaultValue = 0.00;
+    protected $template = '@default';
+}

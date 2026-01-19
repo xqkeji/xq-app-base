@@ -1,11 +1,15 @@
 <?php
-return [
-	'check',
-	'text'=>'状态',
-	'name'=>'status',
-	'defaultValue'=>1,
-	'attr_value'=>1,
-	'attr_class'=>'form-check-input',
-	'template'=>'switch',
-	'filters'=>['int'],
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Check;
+class Switch extends Check
+{
+    protected $name = 'status';
+    protected $text = '状态';
+    protected $defaultValue = 1;
+    protected $attrs = [
+        'value' => 1,
+        'class' => 'form-check-input',
+    ];
+    protected $template = '@switch';
+    protected $filters = ['int'];
+}

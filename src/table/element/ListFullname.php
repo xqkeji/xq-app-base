@@ -1,7 +1,11 @@
 <?php
-return [
-	'ListItem',
-	'name'=>'fullname',
-	'text'=>'姓名',
-	'attr_style'=>'min-width:80px;'
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListFullname extends ListItem
+{
+    protected $name = 'fullname';
+    protected $text = '姓名';
+    protected $attrs = [
+        'style' => 'min-width:80px;',
+    ];
+}

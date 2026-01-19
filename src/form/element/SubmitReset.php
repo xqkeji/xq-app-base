@@ -12,5 +12,6 @@ class SubmitReset extends Div
 		'@Col4Submit',
 		'@Col4Reset',
 	];
+	
 }
 

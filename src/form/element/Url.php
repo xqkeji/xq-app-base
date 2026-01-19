@@ -1,8 +1,14 @@
 <?php
-return [
-	'text',
-	'name'=>'url',
-	'text'=>'链接地址',
-	'attr_required'=>'true',
-	'validators'=>[['required']],
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Text;
+class Url extends Text
+{
+    protected $name = 'url';
+    protected $text = '链接地址';
+    protected $attrs = [
+        'required' => 'true',
+    ];
+    protected $filters = ['url'];
+    protected $vt = [['required']];
+    protected $template = '@default';
+}

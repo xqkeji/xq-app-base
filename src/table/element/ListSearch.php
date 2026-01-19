@@ -1,7 +1,11 @@
 <?php
-return [
-	'submit',
-	'name'=>'search',
-	'attr_class'=>'btn btn-primary',
-	'attr_value'=>'搜索',
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\Submit as BaseSubmit;
+class ListSearch extends BaseSubmit
+{
+    protected $name = 'search';
+    protected $attrs = [
+        'class' => 'btn btn-primary',
+        'value' => '搜索',
+    ];
+}

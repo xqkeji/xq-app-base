@@ -8,5 +8,5 @@ class Add extends Button
 		'value'=>'添加',
 		'class'=>'btn btn-primary mr-1 xq-add',
 	];
-	protected $template = '@default';
+	
 }

@@ -15,4 +15,6 @@ class EmailCode extends BaseEmailCode
         ['required'],
         ['Emailcode'],
     ];
+    protected $filters = ['string'];
+    protected $template = '@default';
 }

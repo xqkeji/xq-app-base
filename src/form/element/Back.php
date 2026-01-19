@@ -10,4 +10,5 @@ class Back extends Button
 		'style'=>'width:100px;margin-bottom:1rem;',
 		'value'=>'返回',
 	];
+	
 }

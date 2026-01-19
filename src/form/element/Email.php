@@ -14,4 +14,6 @@ class Email extends BaseEmail
         ['required'],
         ['email'],
     ];
+    protected $filters = ['email'];
+    protected $template = '@default';
 }

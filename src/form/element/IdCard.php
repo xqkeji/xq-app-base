@@ -16,4 +16,6 @@ class IdCard extends Text
             'message' => '身份证号码格式错误',
         ]
     ];
+    protected $filters = ['string'];
+    protected $template = '@default';
 }

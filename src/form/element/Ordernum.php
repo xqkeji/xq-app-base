@@ -1,12 +1,16 @@
 <?php
-return [
-    'number',
-    'name'=>'ordernum',
-    'text'=>'序号',
-    'attr_required'=>'true',
-    'attr_style'=>'width:80px;',
-    'validators'=>[['required']],
-    'filters'=>['int'],
-    'defaultValue'=>0,
-    'template'=>'col2',
-];
+namespace xqkeji\app\base\form\element;
+use xqkeji\form\element\Number;
+class Ordernum extends Number
+{
+    protected $name = 'ordernum';
+    protected $text = '序号';
+    protected $attrs = [
+        'required' => 'true',
+        'style' => 'width:80px;',
+    ];
+    protected $vt = [['required']];
+    protected $filters = ['int'];
+    protected $defaultValue = 0;
+    protected $template = '@col2';
+}

@@ -1,7 +1,11 @@
 <?php
-return [
-	'ListItem',
-	'name'=>'id_card',
-	'text'=>'身份证号码',
-	'attr_style'=>'min-width:120px;'
-];
+namespace xqkeji\app\base\table\element;
+use xqkeji\form\element\ListItem;
+class ListIdCard extends ListItem
+{
+    protected $name = 'id_card';
+    protected $text = '身份证号码';
+    protected $attrs = [
+        'style' => 'min-width:120px;',
+    ];
+}
