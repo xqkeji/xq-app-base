@@ -7,6 +7,7 @@ class Name extends Text
     protected $text = '名称';
     protected $attrs = [
         'required' => 'true',
+        'class' => 'form-control',
     ];
     protected $filters = ['string'];
     protected $vt = [['required']];

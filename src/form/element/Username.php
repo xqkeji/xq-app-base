@@ -7,6 +7,7 @@ class Username extends Text
     protected $text = '用户名';
     protected $attrs = [
         'required' => '1',
+        'class' => 'form-control',
         'placeholder' => '请输入用户名',
     ];
     protected $filters = ['string'];

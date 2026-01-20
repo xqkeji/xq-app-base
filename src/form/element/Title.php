@@ -7,6 +7,7 @@ class Title extends Text
     protected $text = '标题';
     protected $attrs = [
         'required' => 'true',
+        'class' => 'form-control',
     ];
     protected $filters = ['string'];
     protected $vt = [['required']];
