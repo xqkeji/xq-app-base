@@ -6,7 +6,7 @@ class Col4Reset extends Div
 	protected $name = 'col4reset';
 	protected $text = '';
 	protected $attrs= [
-		'class'=>'col-4 text-center',
+		'class'=>'col-4 text-start',
 	];
 	protected $el=[
 		'@Reset',

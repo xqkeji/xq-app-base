@@ -6,7 +6,7 @@ class Col4Back extends Div
 	protected $name = 'col4back';
 	protected $text = '';
 	protected $attrs= [
-		'class'=>'col-4 text-center',
+		'class'=>'col-4 text-start',
 	];
 	protected $el=[
 		'@Back',

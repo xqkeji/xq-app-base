@@ -6,6 +6,7 @@ class SeoDesc extends TextArea
     protected $name = 'seo_desc';
     protected $text = 'SEO描述';
     protected $attrs = [
+        'class' => 'form-control',
         'rows' => '8',
         'cols' => '30',
     ];

@@ -11,9 +11,9 @@ class ConfirmPassword extends Password
         'placeholder' => '请输入确认密码',
     ];
     protected $vt = [
-        ['required'],
+        ['$required'],
         [
-            'confirm',
+            '$confirm',
             'allowEmpty' => false,
             'with' => 'password',
         ]

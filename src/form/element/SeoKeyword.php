@@ -5,6 +5,9 @@ class SeoKeyword extends Text
 {
     protected $name = 'seo_keyword';
     protected $text = 'SEO关键字';
+    protected $attrs = [
+        'class' => 'form-control',
+    ];
     protected $filters = ['string'];
     protected $template = '@row';
 }

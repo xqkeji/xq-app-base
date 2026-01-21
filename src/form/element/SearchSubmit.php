@@ -1,5 +1,5 @@
 <?php
-namespace xqkeji\app\base\table\element;
+namespace xqkeji\app\base\form\element;
 use xqkeji\form\element\Submit as BaseSubmit;
 class SearchSubmit extends BaseSubmit
 {
