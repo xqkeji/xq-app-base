@@ -12,5 +12,5 @@ class Username extends Text
     ];
     protected $filters = ['string'];
     protected $vt = [['required']];
-    protected $template = '@default';
+    protected $template = '@row';
 }

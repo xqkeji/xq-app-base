@@ -16,5 +16,5 @@ class EmailCode extends BaseEmailCode
         ['Emailcode'],
     ];
     protected $filters = ['string'];
-    protected $template = '@default';
+    protected $template = '@row';
 }

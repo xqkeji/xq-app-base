@@ -10,5 +10,5 @@ class SeoDesc extends TextArea
         'cols' => '30',
     ];
     protected $filters = ['string'];
-    protected $template = '@default';
+    protected $template = '@row';
 }

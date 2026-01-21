@@ -5,5 +5,5 @@ class DocFile extends FileInput
 {
     protected $name = 'doc';
     protected $text = '附件';
-    protected $template = '@default';
+    protected $template = '@row';
 }

@@ -17,5 +17,5 @@ class IdCard extends Text
         ]
     ];
     protected $filters = ['string'];
-    protected $template = '@default';
+    protected $template = '@row';
 }

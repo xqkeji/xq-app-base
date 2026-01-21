@@ -18,5 +18,5 @@ class ConfirmPassword extends Password
             'with' => 'password',
         ]
     ];
-    protected $template = '@default';
+    protected $template = '@row';
 }

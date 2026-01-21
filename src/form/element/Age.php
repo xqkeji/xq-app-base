@@ -12,5 +12,5 @@ class Age extends Number
 	protected $vt = [['required']];
     protected $filters = ['int'];
     protected $defaultValue = 0;
-    protected $template = '@default';
+    protected $template = '@row';
 }

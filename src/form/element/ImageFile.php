@@ -5,5 +5,5 @@ class ImageFile extends FileInput
 {
     protected $name = 'image';
     protected $text = '封面图';
-    protected $template = '@default';
+    protected $template = '@row';
 }

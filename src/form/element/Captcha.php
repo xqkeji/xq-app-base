@@ -15,5 +15,5 @@ class Captcha extends BaseCaptcha
         ['required'],
         ['captcha'],
     ];
-    protected $template = '@default';
+    protected $template = '@row';
 }

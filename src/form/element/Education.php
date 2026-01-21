@@ -14,5 +14,5 @@ class Education extends Select
         1 => '初中', '中职/高中', '专科', '本科', '硕士', '博士'
     ];
     protected $defaultValue = 4;
-    protected $template = '@default';
+    protected $template = '@row';
 }

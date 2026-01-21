@@ -6,5 +6,5 @@ class SeoTitle extends Text
     protected $name = 'seo_title';
     protected $text = 'SEO标题';
     protected $filters = ['string'];
-    protected $template = '@default';
+    protected $template = '@row';
 }

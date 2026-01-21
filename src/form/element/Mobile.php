@@ -20,5 +20,5 @@ class Mobile extends Text
             ]
         ],
     ];
-    protected $template = '@default';
+    protected $template = '@row';
 }

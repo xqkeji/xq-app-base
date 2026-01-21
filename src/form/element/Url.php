@@ -10,5 +10,5 @@ class Url extends Text
     ];
     protected $filters = ['url'];
     protected $vt = [['required']];
-    protected $template = '@default';
+    protected $template = '@row';
 }

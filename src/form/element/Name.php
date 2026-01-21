@@ -11,5 +11,5 @@ class Name extends Text
     ];
     protected $filters = ['string'];
     protected $vt = [['required']];
-    protected $template = '@default';
+    protected $template = '@row';
 }

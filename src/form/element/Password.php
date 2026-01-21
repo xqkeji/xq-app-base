@@ -29,5 +29,5 @@ class Password extends PasswordElement
             'required',
         ]
     ];
-    protected $template = '@default';
+    protected $template = '@row';
 }
