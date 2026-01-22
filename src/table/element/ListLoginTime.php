@@ -8,7 +8,7 @@ class ListLoginTime extends ListItem
     protected $attrs = [
         'style' => 'min-width:180px;',
     ];
-    public static function format($element, $value)
+    public function format($value)
     {
         return date('Y-m-d H:i:s', $value);
     }

@@ -9,7 +9,7 @@ class ListUpdateDate extends ListItem
         'class' => 'xq-order',
         'style' => 'min-width:120px;',
     ];
-    public static function format($element,$value)
+    public function format($value)
     {
         return date('Y-m-d', $value);
     }

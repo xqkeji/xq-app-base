@@ -8,7 +8,7 @@ class ListEducation extends ListItem
     protected $attrs = [
         'style' => 'min-width:80px;',
     ];
-	public static function format($element,$value)
+	public function format($value)
 	{
 		$items = [
                 1 => '初中',

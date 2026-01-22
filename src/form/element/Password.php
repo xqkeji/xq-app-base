@@ -11,16 +11,16 @@ class Password extends PasswordElement
         'placeholder' => '请输入密码',
         'autocomplete' => 'new-password',
     ];
-	public static function beforeAdd($element)
+	public function beforeAdd()
 	{
 		$controller = \xqkeji\App::getController();
 		$actionName = $controller->getActionName();
 		if ($actionName == 'edit') {
-			$attributes = $element->getAttrs();
+			$attributes = $this->getAttrs();
 			unset($attributes['required']);
 			$attributes['placeholder'] = '请输入密码(不用修改密码时，不要填写)';
-			$element->setAttrs($attributes);
-			$element->setValidators([]);
+			$this->setAttrs($attributes);
+			$this->setValidators([]);
 		}
 	}
     protected $filters = ['string'];
