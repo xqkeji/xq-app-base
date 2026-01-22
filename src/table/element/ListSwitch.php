@@ -19,16 +19,19 @@ class ListSwitch extends ListItem
     protected $el = [
         [
             '$div',
+            'name' => 'list-status',
             'attrs'=>[
                 'style' => 'width:32px;margin:auto;',
                 'class' => 'form-check form-switch',
             ],
             'el'=>[
-                '$check',
-                'name'=>'status',
-                'attrs'=>[
-                    'class' => 'form-check-input',
-                ],
+                [
+                    '$check',
+                    'name'=>'status',
+                    'attrs'=>[
+                        'class' => 'form-check-input',
+                    ],
+                ]
             ]
            
         ],

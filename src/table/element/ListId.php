@@ -4,6 +4,7 @@ use xqkeji\form\element\ListItem;
 class ListId extends ListItem
 {
     protected $text = '选择';
+    protected $name = 'list_id';
     protected $attrs = [
         'field' => '_id',
         'class' => 'xq-order',
@@ -11,7 +12,7 @@ class ListId extends ListItem
     ];
     protected $el = [
         [
-            'check',
+            '$check',
             'name' => 'id',
             'useChecked' => false,
         ],

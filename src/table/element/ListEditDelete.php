@@ -10,7 +10,8 @@ class ListEditDelete extends ListItem
     ];
     protected $el = [
         [
-            'button',
+            '$button',
+            'name' => 'edit',
 			'attrs'=>[
 				'class'=>'btn btn-secondary btn-sm xq-edit px-2',
 				'style'=>'margin-right:5px;',
@@ -18,7 +19,8 @@ class ListEditDelete extends ListItem
 			],
         ],
         [
-            'button',
+            '$button',
+            'name' => 'delete',
 			'attrs'=>[
 				'class'=>'btn btn-danger btn-sm xq-delete px-2',
 				'style'=>'margin-right:5px;',

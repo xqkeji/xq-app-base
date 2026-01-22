@@ -1,5 +1,5 @@
 <?php
-namespace xqkeji\app\base\form\element;
+namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\Button;
 class BatchDelete extends Button
 {
