@@ -1,7 +1,7 @@
 <?php
 namespace xqkeji\app\base\table\element;
-use xqkeji\form\element\Div;
-class ListPageSize extends Div
+use xqkeji\form\element\TableDiv;
+class ListPageSize extends TableDiv
 {
     protected $name = 'list-page-size';
     protected $el=[
