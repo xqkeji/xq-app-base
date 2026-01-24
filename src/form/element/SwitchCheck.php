@@ -1,7 +1,7 @@
 <?php
 namespace xqkeji\app\base\form\element;
 use xqkeji\form\element\Check;
-class Switch extends Check
+class SwitchCheck extends Check
 {
     protected $name = 'status';
     protected $text = '状态';
@@ -10,6 +10,6 @@ class Switch extends Check
         'value' => 1,
         'class' => 'form-check-input',
     ];
-    protected $template = '@switch';
+    protected $template = '@SwitchCheck';
     protected $filters = ['int'];
 }

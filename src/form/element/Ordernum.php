@@ -6,6 +6,7 @@ class Ordernum extends Number
     protected $name = 'ordernum';
     protected $text = '序号';
     protected $attrs = [
+        'class' => 'form-control',
         'required' => 'true',
         'style' => 'width:80px;',
     ];

@@ -1,6 +1,6 @@
 <?php
 namespace xqkeji\app\base\form\template;
-class Switch
+class SwitchCheck
 {
     public static function getTemplate()
     {

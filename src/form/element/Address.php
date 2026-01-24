@@ -6,6 +6,7 @@ class Address extends Text
 	protected $name = 'address';
 	protected $text = '地址';
 	protected $attrs= [
+        'class' => 'form-control',
 		'required'=>'true',
 	];
 	protected $filters = ['string'];

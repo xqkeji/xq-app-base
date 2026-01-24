@@ -6,6 +6,7 @@ class Desc extends TextArea
     protected $name = 'desc';
     protected $text = '描述';
     protected $attrs = [
+        'class' => 'form-control',
         'rows' => '8',
         'cols' => '30',
     ];

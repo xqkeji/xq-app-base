@@ -6,6 +6,7 @@ class Fullname extends Text
     protected $name = 'fullname';
     protected $text = '姓名';
     protected $attrs = [
+        'class' => 'form-control',
         'required' => '1',
     ];
     protected $vt = [

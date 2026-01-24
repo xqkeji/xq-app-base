@@ -6,6 +6,7 @@ class IdCard extends Text
     protected $name = 'id_card';
     protected $text = '身份证';
     protected $attrs = [
+        'class' => 'form-control',
         'required' => 'true',
     ];
     protected $vt = [

@@ -6,6 +6,7 @@ class Price extends Number
     protected $name = 'price';
     protected $text = '价格';
     protected $attrs = [
+        'class' => 'form-control',
         'required' => 'true',
         'style' => 'width:120px;',
         'step' => '0.01',

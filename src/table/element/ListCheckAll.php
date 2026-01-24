@@ -1,7 +1,7 @@
 <?php
 namespace xqkeji\app\base\table\element;
-use xqkeji\form\element\ListItem;
-class ListCheckAll extends ListItem
+use xqkeji\form\element\Td;
+class ListCheckAll extends Td
 {
     protected $name = "ListCheckAll";
     protected $el = [

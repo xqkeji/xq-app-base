@@ -11,7 +11,15 @@ class Password extends PasswordElement
         'placeholder' => '请输入密码',
         'autocomplete' => 'new-password',
     ];
-	public function beforeAdd()
+	protected $template = '@row';
+    protected $filters = ['string'];
+    protected $vt = [
+        [
+            'required',
+        ]
+    ];
+    
+    public function beforeAdd()
 	{
 		$controller = \xqkeji\App::getController();
 		$actionName = $controller->getActionName();
@@ -23,11 +31,4 @@ class Password extends PasswordElement
 			$this->setValidators([]);
 		}
 	}
-    protected $filters = ['string'];
-    protected $vt = [
-        [
-            'required',
-        ]
-    ];
-    protected $template = '@row';
 }

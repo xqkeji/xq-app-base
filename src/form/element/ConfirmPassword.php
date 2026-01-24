@@ -10,6 +10,7 @@ class ConfirmPassword extends Password
         'required' => 1,
         'placeholder' => '请输入确认密码',
     ];
+    protected $template = '@row';
     protected $vt = [
         ['$required'],
         [
@@ -18,5 +19,5 @@ class ConfirmPassword extends Password
             'with' => 'password',
         ]
     ];
-    protected $template = '@row';
+    
 }

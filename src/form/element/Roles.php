@@ -8,6 +8,7 @@ class Roles extends Check
     protected $template = '@check';
 	public function beforeAdd()
 	{
+        
 		$model = \xqkeji\mvc\builder\Model::getModel("user_role");
         $roles = $model->where('status', 1)->select();
         $data = [];
@@ -16,6 +17,7 @@ class Roles extends Check
             $key = (string)$role->getKey();
             $data[$key] = $role->rolename;
         }
+        
         $this->setItems($data);
 	}
     

@@ -3,7 +3,7 @@ namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\ListItem;
 class ListSwitch extends ListItem
 {
-    protected $name = 'status';
+    protected $name = 'list-switch';
     protected $text = '状态';
     protected $attrs = [
         'style' => 'min-width:70px;',

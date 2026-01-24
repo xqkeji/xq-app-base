@@ -6,6 +6,7 @@ class Age extends Number
 	protected $name = 'age';
 	protected $text = '年龄';
 	protected $attrs= [
+        'class' => 'form-control',
 		'required'=>'true',
         'style'=>'width:80px;',
 	];
