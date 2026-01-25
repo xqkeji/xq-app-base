@@ -1,9 +1,9 @@
 <?php
 namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\TableDiv;
-class ListAddDelete extends TableDiv
+class ListAddDeleteExport extends TableDiv
 {
-	protected $name = 'list-add-delete';
+	protected $name = 'list-add-delete-export';
 	protected $attrs= [
 		'class'=>'me-auto',
 	];
@@ -22,6 +22,14 @@ class ListAddDelete extends TableDiv
 			'attrs'=>[
 				'value'=>'删除',
 				'class'=>'btn btn-danger me-1 xq-batch',
+			],
+		],
+		[
+			'$Button',
+			'name'=>'export',
+			'attrs'=>[
+				'value'=>'导出',
+				'class'=>'btn btn-danger me-1 xq-export',
 			],
 		],
 	];
