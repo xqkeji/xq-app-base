@@ -10,7 +10,7 @@ class ListOrdernum extends ListItem
     ];
     protected $el = [
         [
-            'number',
+            '$Number',
             'name' => 'ordernum',
             'text' => '序号',
             'attrs' => [

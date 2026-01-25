@@ -6,7 +6,7 @@ class Education extends Select
     protected $name = 'education';
     protected $text = '学历';
     protected $attrs = [
-        'class' => 'form-control',
+        'class'=>'form-select',
         'required' => 'true',
     ];
     protected $filters = ['int'];
