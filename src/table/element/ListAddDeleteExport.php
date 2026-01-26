@@ -29,7 +29,7 @@ class ListAddDeleteExport extends TableDiv
 			'name'=>'export',
 			'attrs'=>[
 				'value'=>'导出',
-				'class'=>'btn btn-danger me-1 xq-export',
+				'class'=>'btn btn-warning me-1 xq-export',
 			],
 		],
 	];
