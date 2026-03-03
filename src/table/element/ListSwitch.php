@@ -8,7 +8,7 @@ class ListSwitch extends ListItem
     protected $attrs = [
         'style' => 'min-width:70px;',
     ];
-    public static function export($element, $value)
+    public function export($value)
     {
         if ($value == 0) {
             return '关闭';
