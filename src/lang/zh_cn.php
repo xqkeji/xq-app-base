@@ -87,6 +87,7 @@ return [
     'is not valid for a credit card number'=>'不是一个合法的信用卡号码',
     'must be the same'=>'必须一样',
     'as'=>'与',
+	'must be unique'=>'必须唯一',
     'is not a valid captcha'=>'不是一个有效的验证码',
     'must a match data'=>'必须是一个匹配的数据',
     'must be within the range'=>'必须在一个范围',

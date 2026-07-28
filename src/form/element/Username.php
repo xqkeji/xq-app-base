@@ -11,6 +11,6 @@ class Username extends Text
         'placeholder' => '请输入用户名',
     ];
     protected $filters = ['string'];
-    protected $vt = [['required']];
+    protected $vt = [['required','unique']];
     protected $template = '@row';
 }
