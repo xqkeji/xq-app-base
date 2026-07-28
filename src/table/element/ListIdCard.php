@@ -6,6 +6,6 @@ class ListIdCard extends ListItem
     protected $name = 'id_card';
     protected $text = '身份证号码';
     protected $attrs = [
-        'style' => 'min-width:120px;',
+        'style' => 'min-width:120px;width:120px;',
     ];
 }

@@ -7,7 +7,7 @@ class ListCreateDate extends ListItem
     protected $text = '创建日期';
     protected $attrs = [
         'class' => 'xq-order',
-        'style' => 'min-width:120px;',
+        'style' => 'min-width:120px;width:120px;',
     ];
     public function format($value)
     {

@@ -6,7 +6,7 @@ class ListEducation extends ListItem
     protected $name = 'education';
     protected $text = '学历';
     protected $attrs = [
-        'style' => 'min-width:80px;',
+        'style' => 'min-width:80px;width:80px;',
     ];
 	public function format($value)
 	{

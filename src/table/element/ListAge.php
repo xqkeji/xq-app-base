@@ -6,6 +6,6 @@ class ListAge extends ListItem
     protected $name = 'age';
     protected $text = '年龄';
     protected $attrs = [
-        'style' => 'min-width:80px;',
+        'style' => 'min-width:80px;width:80px;',
     ];
 }

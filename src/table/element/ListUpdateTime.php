@@ -7,7 +7,7 @@ class ListUpdateTime extends ListItem
     protected $text = '更新时间';
     protected $attrs = [
         'class' => 'xq-order',
-        'style' => 'min-width:180px;',
+        'style' => 'min-width:180px;width:180px;',
     ];
     public function format($value)
     {

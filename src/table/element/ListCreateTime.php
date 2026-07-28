@@ -7,7 +7,7 @@ class ListCreateTime extends ListItem
     protected $text = '创建时间';
     protected $attrs = [
         'class' => 'xq-order',
-        'style' => 'min-width:180px;',
+        'style' => 'min-width:180px;width:180px;',
     ];
     public function format($value)
     {

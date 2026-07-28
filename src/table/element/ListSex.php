@@ -6,7 +6,7 @@ class ListSex extends ListItem
     protected $name = 'sex';
     protected $text = '性别';
     protected $attrs = [
-        'style' => 'min-width:80px;',
+        'style' => 'min-width:80px;width:80px;',
     ];
     public function format( $value)
     {

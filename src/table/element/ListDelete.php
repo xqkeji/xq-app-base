@@ -6,7 +6,7 @@ class ListDelete extends ListItem
     protected $name = 'operation';
     protected $text = '操作';
     protected $attrs = [
-        'style' => 'min-width:80px;',
+        'style' => 'min-width:80px;width:80px;',
     ];
     protected $el = [
         [

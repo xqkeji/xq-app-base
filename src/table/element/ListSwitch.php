@@ -6,7 +6,7 @@ class ListSwitch extends ListItem
     protected $name = 'list-switch';
     protected $text = '状态';
     protected $attrs = [
-        'style' => 'min-width:70px;',
+        'style' => 'min-width:70px;width:70px;',
     ];
     public function export($value)
     {

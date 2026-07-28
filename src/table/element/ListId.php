@@ -8,7 +8,7 @@ class ListId extends ListItem
     protected $attrs = [
         'field' => '_id',
         'class' => 'xq-order',
-        'style' => 'min-width:60px;',
+        'style' => 'min-width:60px;width:60px;',
     ];
     protected $el = [
         [

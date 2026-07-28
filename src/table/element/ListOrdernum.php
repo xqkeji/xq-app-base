@@ -6,7 +6,7 @@ class ListOrdernum extends ListItem
     protected $text = '序号';
     protected $name = 'list-ordernum';
     protected $attrs = [
-        'style' => 'min-width:80px;',
+        'style' => 'min-width:80px;width:80px;',
     ];
     protected $el = [
         [

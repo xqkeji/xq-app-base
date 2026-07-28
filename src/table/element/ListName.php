@@ -6,6 +6,6 @@ class ListName extends ListItem
     protected $name = 'name';
     protected $text = '名称';
     protected $attrs = [
-        'style' => 'min-width:350px;',
+        'style' => 'min-width:120px;',
     ];
 }

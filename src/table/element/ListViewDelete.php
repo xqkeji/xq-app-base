@@ -6,7 +6,7 @@ class ListViewDelete extends ListItem
     protected $name = 'operation';
     protected $text = '操作';
     protected $attrs = [
-        'style' => 'min-width:120px;',
+        'style' => 'min-width:120px;width:120px;',
     ];
     protected $el = [
         [

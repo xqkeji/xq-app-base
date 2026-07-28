@@ -6,6 +6,6 @@ class ListMobile extends ListItem
     protected $name = 'mobile';
     protected $text = '手机号码';
     protected $attrs = [
-        'style' => 'min-width:120px;',
+        'style' => 'min-width:120px;width:120px;',
     ];
 }
