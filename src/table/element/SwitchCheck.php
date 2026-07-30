@@ -1,7 +1,7 @@
 <?php
 namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\ListItem;
-class Switch extends ListItem
+class SwitchCheck extends ListItem
 {
     protected $name = 'list-switch';
     protected $text = '状态';
