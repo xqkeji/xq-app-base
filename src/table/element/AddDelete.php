@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\TableDiv;
 class AddDelete extends TableDiv

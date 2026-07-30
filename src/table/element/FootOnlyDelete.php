@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\base\table\element;
 use xqkeji\form\element\ListFoot as BaseListFoot;
 class FootOnlyDelete extends BaseListFoot
