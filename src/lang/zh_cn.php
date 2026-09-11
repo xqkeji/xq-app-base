@@ -133,5 +133,12 @@ return [
     'second'=>'秒',
     'retrieve'=>'重新获取',
     'obtain'=>'获取',
-    
+    'edit'=>'编辑',
+	'delete'=>'删除',
+	'move'=>'移动',
+	'add'=>'添加',
+	'copy'=>'复制',
+	'new'=>'新',
+	'success'=>'成功',
+	'failed'=>'失败',
 ];
