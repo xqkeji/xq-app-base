@@ -9,21 +9,7 @@ class ViewDelete extends ListItem
         'style' => 'min-width:120px;width:120px;',
     ];
     protected $el = [
-        [
-            '$button',
-			'attrs'=>[
-				'class'=>'btn btn-secondary btn-sm xq-edit px-2',
-				'style'=>'margin-right:5px;',
-				'value' => '查看',
-			],
-        ],
-        [
-            '$button',
-			'attrs'=>[
-				'class'=>'btn btn-danger btn-sm xq-delete px-2',
-				'style'=>'margin-right:5px;',
-				'value' => '删除',
-			],
-        ],
+       '@ViewButton',
+       '@DeleteButton',
     ];
 }

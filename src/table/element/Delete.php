@@ -9,12 +9,6 @@ class Delete extends ListItem
         'style' => 'min-width:80px;width:80px;',
     ];
     protected $el = [
-        [
-            '$Button',
-			'attrs'=>[
-				'class'=>'btn btn-danger btn-sm xq-delete',
-				'value' => '删除',
-			],
-        ],
+        '@DeleteButton'
     ];
 }

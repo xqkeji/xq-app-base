@@ -4,9 +4,7 @@ use xqkeji\form\element\ListFoot as BaseListFoot;
 class Foot extends BaseListFoot
 {
     protected $name = 'list_foot';
-    protected $el = [
-        '@CheckAll',
-        '@Toolbar'
-    ];
-      
+	protected $buttons=['@AddButton','@BDeleteButton'];
+	protected $checkAll=['@CheckAll'];
+	protected $pager=['@Pager','@PageSize']; 
 }
