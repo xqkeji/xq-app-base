@@ -3,7 +3,7 @@ namespace xqkeji\app\base\form\element;
 use xqkeji\form\element\FileInput;
 class DocFile extends FileInput
 {
-    protected $name = 'attach_doc';
+    protected $name = 'xq_attach_doc';
     protected $text = '附件';
     protected $template = '@row';
 	protected $uploadUrl="/admin/doc/upload";
