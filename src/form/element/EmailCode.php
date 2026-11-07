@@ -12,8 +12,8 @@ class EmailCode extends BaseEmailCode
         'style' => 'float:left;width:100px;',
     ];
     protected $vt = [
-        ['required'],
-        ['Emailcode'],
+        '$required',
+        '$Emailcode',
     ];
     protected $filters = ['string'];
     protected $template = '@row';

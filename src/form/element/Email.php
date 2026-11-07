@@ -11,8 +11,8 @@ class Email extends BaseEmail
         'placeholder' => '请输入邮箱地址',
     ];
     protected $vt = [
-        ['required'],
-        ['email'],
+        '$required',
+        '$email',
     ];
     protected $filters = ['email'];
     protected $template = '@row';

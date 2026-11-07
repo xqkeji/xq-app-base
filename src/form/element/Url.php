@@ -10,6 +10,6 @@ class Url extends Text
         'required' => 'true',
     ];
     protected $filters = ['url'];
-    protected $vt = [['required']];
+    protected $vt = ['$required'];
     protected $template = '@row';
 }

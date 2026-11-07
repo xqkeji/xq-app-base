@@ -12,12 +12,11 @@ class ConfirmPassword extends Password
     ];
     protected $template = '@row';
     protected $vt = [
-        ['$required'],
-        [
-            '$confirm',
+        '$required',
+        '$confirm' => [
             'allowEmpty' => false,
             'with' => 'password',
-        ]
+        ],
     ];
     
 }

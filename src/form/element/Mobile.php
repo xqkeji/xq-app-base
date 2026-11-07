@@ -11,13 +11,10 @@ class Mobile extends Text
         'placeholder' => '请输入手机号码',
     ];
     protected $vt = [
-        ['required'],
-        [
-            'regex',
-            [
-                'pattern' => '/^1(3[0-9]|4[01456879]|5[0-35-9]|6[2567]|7[0-8]|8[0-9]|9[0-35-9])\d{8}$/',
-                'message' => '手机号码格式错误',
-            ]
+        '$required',
+        '$regex' => [
+            'pattern' => '/^1(3[0-9]|4[01456879]|5[0-35-9]|6[2567]|7[0-8]|8[0-9]|9[0-35-9])\d{8}$/',
+            'message' => '手机号码格式错误',
         ],
     ];
     protected $template = '@row';

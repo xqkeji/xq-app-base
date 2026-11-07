@@ -10,6 +10,6 @@ class Date extends BaseDate
         'class' => 'form-control',
     ];
     protected $filters = ['string'];
-    protected $vt = [['required']];
+    protected $vt = ['$required'];
     protected $template = '@row';
 }

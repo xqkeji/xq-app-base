@@ -10,7 +10,7 @@ class Fullname extends Text
         'required' => '1',
     ];
     protected $vt = [
-        ['required'],
+        '$required',
     ];
     protected $filters = ['string'];
     protected $template = '@row';

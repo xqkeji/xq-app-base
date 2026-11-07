@@ -11,7 +11,7 @@ class Price extends Number
         'style' => 'width:120px;',
         'step' => '0.01',
     ];
-    protected $vt = [['required']];
+    protected $vt = ['$required'];
     protected $filters = ['float'];
     protected $defaultValue = 0.00;
     protected $template = '@row';

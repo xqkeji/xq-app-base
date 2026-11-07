@@ -12,8 +12,8 @@ class Captcha extends BaseCaptcha
         'style' => 'float:left;width:100px;',
     ];
     protected $vt = [
-        ['required'],
-        ['captcha'],
+        '$required',
+        '$captcha',
     ];
     protected $template = '@row';
 }

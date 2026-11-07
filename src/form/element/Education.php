@@ -10,7 +10,7 @@ class Education extends Select
         'required' => 'true',
     ];
     protected $filters = ['int'];
-    protected $vt = [['required']];
+    protected $vt = ['$required'];
     protected $items = [
         1 => '初中', '中职/高中', '专科', '本科', '硕士', '博士'
     ];

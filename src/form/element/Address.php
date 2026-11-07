@@ -10,6 +10,6 @@ class Address extends Text
 		'required'=>'true',
 	];
 	protected $filters = ['string'];
-	protected $vt = [['required']];
+	protected $vt = ['$required'];
 	protected $template = '@row';
 }
