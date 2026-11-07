@@ -9,4 +9,8 @@ class Auth extends BaseAuth
         'class' => 'form-control',
     ];
     protected $template = '@auth';
+	public function getMissedValue()
+	{
+		return [];
+	}
 }

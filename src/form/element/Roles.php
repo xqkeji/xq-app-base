@@ -20,5 +20,8 @@ class Roles extends Check
         
         $this->setItems($data);
 	}
-    
+    public function getMissedValue()
+	{
+		return [];
+	}
 }

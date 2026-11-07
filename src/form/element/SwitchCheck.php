@@ -12,4 +12,8 @@ class SwitchCheck extends Check
     ];
     protected $template = '@SwitchCheck';
     protected $filters = ['int'];
+	public function getMissedValue()
+	{
+		return 0;
+	}
 }
