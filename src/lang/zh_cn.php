@@ -141,4 +141,5 @@ return [
 	'new'=>'新',
 	'success'=>'成功',
 	'failed'=>'失败',
+	"login failure too many times please try again in %min% minutes" => "登录失败次数过多，请 %min% 分钟后再试",
 ];
