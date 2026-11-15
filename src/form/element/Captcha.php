@@ -4,7 +4,7 @@ use xqkeji\form\element\Captcha as BaseCaptcha;
 class Captcha extends BaseCaptcha
 {
     protected $name = 'captcha';
-    protected $text = '图象码';
+    protected $text = '图像码';
     protected $attrs = [
         'class' => 'form-control',
         'required' => 1,
