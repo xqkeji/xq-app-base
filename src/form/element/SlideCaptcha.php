@@ -5,7 +5,9 @@ class SlideCaptcha extends BaseCaptcha
 {
     protected $name = 'slide-captcha';
     protected $text = '滑动验证码';
-    
+    protected $attrs=[
+		'style'=>'flex: 1 1 auto;min-width: 0;width: auto;',
+	];
     protected $vt = [
         '$required',
         '$SlideCaptcha',
